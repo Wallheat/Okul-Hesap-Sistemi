@@ -84,36 +84,12 @@ class Teacher(Person):
                  
         return f"Sayın {self.name} {self.surname}, Meslek: {self.profession}. Alanınız {self.teacher_branch}. Yaşınız {self.age}. {self.experience} yıllık deneyiminiz sonucu maaşınız = {total_salary}"
         
-        # ÖĞRENCİ        
-öğrenci1 = Student("11/F", "Sayısal", "Zeynep", "Yeşilçim", 17, "Kadın")
-öğrenci2 = Student("12/F", "EA", "Lilu", "Atilla", 14, "Erkek")
 
-print(öğrenci1.age)
-print(öğrenci1.notes(15,15))
-print(öğrenci1.average())
-print(öğrenci1.passed_away_control())
+       
+def sayaç():
+    x = 0 
+    while x < 5:
+        print("Merhaba")
+        x += 1
 
-print("////////////////////////////")
-
-print(öğrenci2.notes(85,60,70,100,29))
-print(öğrenci2.average())
-print(öğrenci2.classroom)
-print(öğrenci2.passed_away_control())
-
-# ÖĞRETMEN
-print("////////////////////////////")
-print("Öğretmen")
-print("////////////////////////////")
-
-
-öğretmen1 = Teacher("Sport", "Teacher", 7, "Buse", "Bayrak", 23, "Kadın")
-print(öğretmen1.salary())
-
-öğretmen2 = Teacher("Math", "Teacher", 3, "Melisa", "Canan", 26, "Kadın")
-print(öğretmen2.salary())
-
-öğretmen3 = Teacher("History", "Teacher", 1, "Musa", "Tekin", 46, "Erkek")
-print(öğretmen3.salary())
-
-öğretmen4 = Teacher("Art", "Teacher", 11, "Caner", "Güler", 22, "Erkek")
-print(öğretmen4.salary())
+sayaç()
